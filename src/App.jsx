@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
-import Editor from './pages/Editor';
+import EditorSide from './pages/Editor';
 
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/editor/:projectID' element={<Editor />} />
+          <Route path='/editor/:projectID' element={<EditorSide />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
